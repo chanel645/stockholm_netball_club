@@ -1,20 +1,20 @@
 import React from 'react';
 import './../../App.css';
-import slide1 from './Content/Slides/Slide1.jpg';
-import slide2 from './Content/Slides/Slide2.jpg';
-import slide3 from './Content/Slides/Slide3.jpg';
-import slide4 from './Content/Slides/Slide4.jpg';
-import slide5 from './Content/Slides/Slide5.jpg';
-import image1 from './Content/Image1.jpg';
-import image2 from './Content/Image2.jpg';
-import emblem from './../../Content/MayfieldGolfClubEmblem.png';
-import UseWindowSize from '../../CommonComponents/UseWindowSize';
-import { MobileWidth, GoogleApiKey } from '../../CommonComponents/Globals';
-import { Slide } from 'react-slideshow-image';
+// import slide1 from './Content/Slides/Slide1.jpg';
+// import slide2 from './Content/Slides/Slide2.jpg';
+// import slide3 from './Content/Slides/Slide3.jpg';
+// import slide4 from './Content/Slides/Slide4.jpg';
+// import slide5 from './Content/Slides/Slide5.jpg';
+// import image1 from './Content/Image1.jpg';
+// import image2 from './Content/Image2.jpg';
+// import emblem from './../../Content/StockholmNetballClubEmblem.png';
+import UseWindowSize from '../../commonComponents/UseWindowSize';
+import { MobileWidth, GoogleApiKey } from '../../commonComponents/Globals';
+// import { Slide } from 'react-slideshow-image';
 import { Grid, GridItem, Text, Card, CardHeader, CardBody, Stack, Flex, Divider, CardFooter } from '@chakra-ui/react';
 import 'react-slideshow-image/dist/styles.css';
 
-const slides = [slide1, slide2, slide4, slide5];
+// const slides = [slide1, slide2, slide4, slide5];
 
 interface ContentSectionProps {
   title: string;
@@ -39,43 +39,41 @@ export default function Home() {
 
   const containerClass = isDesktopView ? 'homeTextContainerDesktop' : 'homeTextContainerMobile';
 
-  const slideShow = (
-    <div className='slideShowContainer'>
-      <img src={emblem} className='slideShowEmblem' />
-      <Slide duration={5000} arrows={false} canSwipe={false} pauseOnHover={false} cssClass='slideShow'>
-        {slides.map((slide, index) => (
-          <div className='each-slide-effect' key={index}>
-            <img src={slide} className='slideShowImage' />
-          </div>
-        ))}
-      </Slide>
-    </div>
-  );
+  // const slideShow = (
+  //   <div className='slideShowContainer'>
+  //     <img src={emblem} className='slideShowEmblem' />
+  //     <Slide duration={5000} arrows={false} canSwipe={false} pauseOnHover={false} cssClass='slideShow'>
+  //       {slides.map((slide, index) => (
+  //         <div className='each-slide-effect' key={index}>
+  //           <img src={slide} className='slideShowImage' />
+  //         </div>
+  //       ))}
+  //     </Slide>
+  //   </div>
+  // );
 
   const introSection = (
-    <ContentSection title='ONE OF THE BEST 9 HOLE GOLF COURSES IN MID CANTERBURY' className={containerClass}>
-      Mayfield Golf Club is a friendly country course in the heart of Mid Canterbury.
-      Our scenic nine-hole layout, played twice for a full 18, offers irrigated fairways, year‑round
-      playability, and a relaxed atmosphere surrounded by rolling farmland on the bank of the Hinds river.
-      Whether you're a seasoned golfer or just starting out, Mayfield provides an affordable, welcoming
-      place to enjoy the game, connect with others, and experience the charm of rural New Zealand golf.
+    <ContentSection title='A WELCOMING NETBALL CLUB IN STOCKHOLM' className={containerClass}>
+      Stockholm Netball Club is a friendly community club in the heart of Stockholm.
+      Our welcoming courts offer year-round playability, a relaxed atmosphere, and a place
+      for players of all experience levels to enjoy the game and connect with others.
     </ContentSection>
   );
 
 const greenFeesSection = (
   <Card className='greenFeesCard'>
     <CardHeader display='flex' justifyContent='center'>
-      <Text className='textLargeBold'>GREEN FEES</Text>
+      <Text className='textLargeBold'>CLUB FEES</Text>
     </CardHeader>
     <CardBody pt={0}>
       <Stack spacing={2}>
         <Flex justify='space-between'>
-          <Text className='textLarge'>18 Holes</Text>
+          <Text className='textLarge'>Senior membership</Text>
           <Text className='textLarge'>$30</Text>
         </Flex>
         <Divider />
         <Flex justify='space-between'>
-          <Text className='textLarge'>9 Holes</Text>
+          <Text className='textLarge'>Junior membership</Text>
           <Text className='textLarge'>$20</Text>
         </Flex>
         <Divider />
@@ -88,8 +86,8 @@ const greenFeesSection = (
     </CardBody>
     <CardFooter display='flex' justifyContent='center' pt={0}>
       <Stack spacing={2} textAlign='center'>
-        <Text className='textMedium'>Please fill out a Green Fee Ticket and carry this with you. Payment can be made by cash via the Green Fees Box or by Online Banking. Payments can be made to:</Text>
-        <Text className='textMedium'>Mayfield Golf Club</Text>
+        <Text className='textMedium'>Please contact the club for membership information and payment details.</Text>
+        <Text className='textMedium'>Stockholm Netball Club</Text>
         <Text className='textMedium'>03-1903-0038936-10</Text>
         <Text className='textMedium'>Please use your Green Fee Ticket Number as reference.</Text>
       </Stack>
@@ -151,7 +149,7 @@ const membershipSection = (
 
   const locationSection = (
     <ContentSection title='WHERE TO FIND US' className={containerClass}>
-      Mayfield Golf Course is located at 30 Bulls Road, Mayfield, Canterbury, New Zealand.
+      Stockholm Netball Club is based in Stockholm, Sweden.
       <br />
       Use the map below to locate us.
     </ContentSection>
@@ -166,7 +164,7 @@ const membershipSection = (
 
   return (
     <div>
-      {slideShow}
+      {/* Replacement homepage slideshow goes here. */}
       {isDesktopView ? (
         <div className='homePageContainerDesktop'>
           {introSection}
@@ -186,9 +184,9 @@ const membershipSection = (
         <div className='homePageContainerMobile'>
           {introSection}
           {greenFeesSection}
-          <img src={image1} />
+          {/* Replacement homepage image goes here. */}
           {membershipSection}
-          <img src={image2} />
+          {/* Replacement homepage image goes here. */}
           {locationSection}
         </div>
       )}

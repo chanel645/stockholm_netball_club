@@ -2,8 +2,8 @@ import React from 'react';
 import './../App.css';
 import NavBar from './NavBar';
 import NavDrawer from './NavDrawer';
-import logo from './../Content/MayfieldGolfClubLogo.png';
-import logoWhite from './../Content/MayfieldGolfClubLogoWhite.png';
+// import logo from './../Content/StockholmNetballClubLogo.png';
+// import logoWhite from './../Content/StockholmNetballClubLogoWhite.png';
 import { Center, Grid, GridItem } from '@chakra-ui/react';
 import { MobileWidth } from './Globals';
 import UseWindowSize from './UseWindowSize';
@@ -23,7 +23,7 @@ export default function PageHeader(pageHeaderProps: PageHeaderProps) {
     return (
         <Grid templateColumns='repeat(5, 1fr)' gap={6} className='headerbar'>
             <GridItem colSpan={1}>
-                <img src={logo} className='logo'/>
+                {/* Replacement header logo goes here. */}
             </GridItem>
             <GridItem colSpan={4}>
                 <NavBar page={pageHeaderProps.page} setPage={pageHeaderProps.setPage}/>
@@ -40,7 +40,7 @@ export default function PageHeader(pageHeaderProps: PageHeaderProps) {
             </GridItem>
             <GridItem colSpan={2}>
                 <Center>
-                    <img src={logoWhite} className='logo'/>
+                    {/* Replacement mobile logo goes here. */}
                 </Center>
             </GridItem>
         </Grid>

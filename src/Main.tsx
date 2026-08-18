@@ -4,8 +4,8 @@ import { AnimatePresence, motion } from "motion/react"
 import Home from './Pages/Home/Home';
 import Schedule from './Pages/Schedule/Schedule';
 import Course from './Pages/Course/Course';
-import PageHeader from './CommonComponents/PageHeader';
-import PageFooter from './CommonComponents/PageFooter';
+import PageHeader from './commonComponents/PageHeader';
+import PageFooter from './commonComponents/PageFooter';
 
 export default function Main() {
 

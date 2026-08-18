@@ -1,9 +1,9 @@
 import React from 'react';
 import './../../../App.css';
-import CourseMapImage from './../Content/CourseMapImage.png'
+// Replacement court map image will be added later.
 import HoleButton from './HoleButton';
-import UseWindowSize from '../../../CommonComponents/UseWindowSize';
-import { MobileWidth } from '../../../CommonComponents/Globals';
+import UseWindowSize from '../../../commonComponents/UseWindowSize';
+import { MobileWidth } from '../../../commonComponents/Globals';
 
 export default function CourseMap() {
 
@@ -13,7 +13,7 @@ export default function CourseMap() {
   return (
     <div className='courseMap'>
       <div className="courseMapBox">
-          <img src={CourseMapImage} className={isDesktopView ? 'courseMapDesktop' : 'courseMapMobile'} />
+          {/* Replacement court map image goes here. */}
           <HoleButton top="40%" left={isDesktopView ? "71.5%" : "71.5%"} transform="translate(-50%, -50%)" label="1"/>
           <HoleButton top="9%" left={isDesktopView ? "66%" : "65.5%"} transform="translate(-50%, -50%)" label="2"/>
           <HoleButton top="35%" left={isDesktopView ? "59.8%" : "59.8%"} transform="translate(-50%, -50%)" label="3"/>

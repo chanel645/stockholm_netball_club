@@ -1,14 +1,14 @@
 import React from 'react';
 import './../../App.css';
-import TitleImage from './Content/TitleImage.jpg'
+// Replacement schedule title image will be added later.
 import { Box } from '@chakra-ui/react'
 import { Button, ButtonGroup, Grid, GridItem, Text, Card, CardHeader, CardBody, Stack, Flex, Divider, CardFooter } from '@chakra-ui/react';
-import PageTitle from '../../CommonComponents/PageTitle';
+import PageTitle from '../../commonComponents/PageTitle';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import { ToolbarProps, EventPropGetter, View  } from 'react-big-calendar';
 import moment from 'moment'
-import { MobileWidth } from '../../CommonComponents/Globals';
-import UseWindowSize from '../../CommonComponents/UseWindowSize';
+import { MobileWidth } from '../../commonComponents/Globals';
+import UseWindowSize from '../../commonComponents/UseWindowSize';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import MensEventsRaw from './Content/MensEvents.json';
 import WomensEventsRaw from './Content/WomensEvents.json';
@@ -18,8 +18,7 @@ import {
   Modal, ModalOverlay, ModalContent, ModalHeader,
   ModalBody, ModalCloseButton, useDisclosure,
 } from '@chakra-ui/react';
-import image1 from './Content/Image1.jpg';
-import image2 from './Content/Image2.jpg';
+// Replacement schedule images will be added later.
 
 type MyEvent = {
   title: string;
@@ -208,7 +207,7 @@ const scheduleDownload = (
       <Stack spacing={3}>
         <Button
           as="a"
-          href={`${process.env.PUBLIC_URL}/Content/MayfieldGolfClubMensCalander2026.pdf`}
+          href={`${process.env.PUBLIC_URL}/Content/StockholmNetballClubMensCalendar2026.pdf`}
           download
           colorScheme="green"
           variant="outline"
@@ -218,7 +217,7 @@ const scheduleDownload = (
         </Button>
         <Button
           as="a"
-          href={`${process.env.PUBLIC_URL}/Content/MayfieldGolfLadiesCalendar2026.pdf`}
+          href={`${process.env.PUBLIC_URL}/Content/StockholmNetballClubLadiesCalendar2026.pdf`}
           download
           colorScheme="blue"
           variant="outline"
@@ -389,7 +388,7 @@ export default function Schedule() {
 
   return (
     <div>
-      <PageTitle mainText='SCHEDULE' image={TitleImage} />
+      <PageTitle mainText='SCHEDULE' />
       {isDesktopView ? (
         <div>
           {MyCalendar()}
@@ -407,9 +406,9 @@ export default function Schedule() {
       ) : (
         <div className='homePageContainerMobile'>
           {MyCalendar()}
-          <img src={image1} />
+          {/* Replacement schedule image goes here. */}
           {daysOfPlay}
-          <img src={image2} />
+          {/* Replacement schedule image goes here. */}
           {scheduleDownload}
         </div>
       )}
