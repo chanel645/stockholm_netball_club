@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stockholm_netball_club/static/css/main.28b82e04.css",
+    "main.js": "/stockholm_netball_club/static/js/main.c7807635.js",
+    "static/js/453.0fbed020.chunk.js": "/stockholm_netball_club/static/js/453.0fbed020.chunk.js",
+    "index.html": "/stockholm_netball_club/index.html",
+    "main.28b82e04.css.map": "/stockholm_netball_club/static/css/main.28b82e04.css.map",
+    "main.c7807635.js.map": "/stockholm_netball_club/static/js/main.c7807635.js.map",
+    "453.0fbed020.chunk.js.map": "/stockholm_netball_club/static/js/453.0fbed020.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28b82e04.css",
+    "static/js/main.c7807635.js"
+  ]
+}
