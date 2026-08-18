@@ -55,13 +55,13 @@ export default function Home() {
   const introSection = (
     <ContentSection title='A WELCOMING NETBALL CLUB IN STOCKHOLM' className={containerClass}>
       Stockholm Netball Club is a friendly community club in the heart of Stockholm.
-      Our welcoming courts offer year-round playability, a relaxed atmosphere, and a place
+      Our welcoming club offers year-round sessions, a relaxed atmosphere, and a place
       for players of all experience levels to enjoy the game and connect with others.
     </ContentSection>
   );
 
-const greenFeesSection = (
-  <Card className='greenFeesCard'>
+const clubFeesSection = (
+  <Card className='clubFeesCard'>
     <CardHeader display='flex' justifyContent='center'>
       <Text className='textLargeBold'>CLUB FEES</Text>
     </CardHeader>
@@ -171,7 +171,7 @@ const membershipSection = (
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
             <Grid templateColumns='repeat(2, 1fr)' gap={6}>
               <GridItem colSpan={1} display='flex'>
-                {greenFeesSection}
+                {clubFeesSection}
               </GridItem>
               <GridItem colSpan={1} display='flex'>
                 {membershipSection}
@@ -183,7 +183,7 @@ const membershipSection = (
       ) : (
         <div className='homePageContainerMobile'>
           {introSection}
-          {greenFeesSection}
+          {clubFeesSection}
           {/* Replacement homepage image goes here. */}
           {membershipSection}
           {/* Replacement homepage image goes here. */}

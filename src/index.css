@@ -211,7 +211,7 @@ body {
   height: 300px;
 }
 
-.greenFeesCard,
+.clubFeesCard,
 .membershipCard {
   width: 100%;
   max-width: 400px;
@@ -221,13 +221,13 @@ body {
   flex: 1;
 }
 
-.greenFeesCardBody {
+.clubFeesCardBody {
   padding-top: 0px;
 }
 
 
 @media (max-width: 768px) {
-  .greenFeesCard {
+  .clubFeesCard {
     max-width: 100%;
     margin: 12px 16px;
     width: calc(100% - 32px);
