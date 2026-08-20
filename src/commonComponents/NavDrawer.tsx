@@ -2,15 +2,12 @@ import React from 'react';
 import './../App.css';
 import { 
   Drawer,
-  DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   Button,
   useDisclosure,
-  ButtonGroup
 } from '@chakra-ui/react'
 import { 
   HamburgerIcon 

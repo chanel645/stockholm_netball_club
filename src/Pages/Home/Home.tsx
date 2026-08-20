@@ -158,6 +158,7 @@ const membershipSection = (
   const googleMap = (
     <iframe
       className='googleMap'
+      title='Stockholm Netball Club location map'
       src={`https://www.google.com/maps/embed/v1/place?key=${GoogleApiKey}&q=place_id:ChIJK6BlywWdX0YRUtvKSZP1RLo`}
     />
   );

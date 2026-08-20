@@ -1,12 +1,9 @@
 import React from 'react';
-import Home from '../Pages/Home/Home';
 import './../App.css';
 import { 
   Tabs, 
   TabList, 
-  TabPanels, 
   Tab, 
-  TabPanel
 } from '@chakra-ui/react'
 
 interface NavBarProps {
@@ -40,7 +37,7 @@ export default function NavBar(navBarProps: NavBarProps) {
   React.useEffect(() => {
     const startIndex = getByValue(pagesMap, navBarProps.page) ?? 0;
     setTabIndex(startIndex);
- });
+  }, [navBarProps.page]);
 
   const handleTabsChange = (index: number) => {
     navBarProps.setPage(pagesMap.get(index) ?? "home")

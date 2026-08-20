@@ -13,7 +13,7 @@ const HoleButton = ({
 }) => {
   
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { width, height } = UseWindowSize();
+  const { width } = UseWindowSize();
   return (
     <div>
       <Button

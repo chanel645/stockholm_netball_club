@@ -2,7 +2,7 @@ import React from 'react';
 import './../../App.css';
 // Replacement schedule title image will be added later.
 import { Box } from '@chakra-ui/react'
-import { Button, ButtonGroup, Grid, GridItem, Text, Card, CardHeader, CardBody, Stack, Flex, Divider, CardFooter } from '@chakra-ui/react';
+import { Button, ButtonGroup, Grid, GridItem, Text, Card, CardHeader, CardBody, Stack, Flex, Divider } from '@chakra-ui/react';
 import PageTitle from '../../commonComponents/PageTitle';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import { ToolbarProps, EventPropGetter, View  } from 'react-big-calendar';

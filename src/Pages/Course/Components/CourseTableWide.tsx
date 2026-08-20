@@ -1,6 +1,6 @@
 import React from 'react';
 import './../../../App.css';
-import { TableContainer, Table, Th, Thead, Tbody, Tr, Td, Tfoot, TableCaption, GridItem, Grid, Text } from '@chakra-ui/react';
+import { TableContainer, Table, Th, Thead, Tbody, Tr, Td, Tfoot, Text } from '@chakra-ui/react';
 
 export default function CourseTableWide() {
 
