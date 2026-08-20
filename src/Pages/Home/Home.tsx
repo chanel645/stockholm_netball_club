@@ -79,7 +79,7 @@ const clubFeesSection = (
         </Flex>
         <Divider />
         <Flex justify='space-between'>
-          <Text className='textLarge'>Discounted membership for students</Text>
+          <Text className='textLarge'>Discounted membership for students TEST TEST</Text>
         </Flex>
         <Divider />
       </Stack>
