@@ -211,10 +211,75 @@ body {
   height: 300px;
 }
 
+.instagramEmbed {
+  width: 100%;
+  min-height: 480px;
+  border: 0;
+}
+
+.facebookProfile {
+  min-height: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  border: 1px solid #d5e3f0;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #f5f9fc, #e8f1f8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.facebookProfileMark {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: #1877f2;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 68px;
+}
+
+.facebookProfileTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.facebookProfileText {
+  max-width: 260px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.facebookProfileLink {
+  padding: 10px 18px;
+  border-radius: 6px;
+  background: #1877f2;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.facebookProfileLink:hover {
+  background: #145fc4;
+}
+
+.socialEmbeds {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.locationCard,
 .clubFeesCard,
 .membershipCard {
   width: 100%;
-  max-width: 400px;
+  max-width: none;
   margin: 16px auto;
   border-radius: 12px !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
@@ -227,10 +292,16 @@ body {
 
 
 @media (max-width: 768px) {
-  .clubFeesCard {
+  .locationCard,
+  .clubFeesCard,
+  .membershipCard {
     max-width: 100%;
     margin: 12px 16px;
     width: calc(100% - 32px);
+  }
+
+  .socialEmbeds {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -79,7 +79,7 @@ const clubFeesSection = (
         </Flex>
         <Divider />
         <Flex justify='space-between'>
-          <Text className='textLarge'>Discounted membership for students TEST TEST</Text>
+          <Text className='textLarge'>Discounted membership for students</Text>
         </Flex>
         <Divider />
       </Stack>
@@ -95,13 +95,34 @@ const clubFeesSection = (
 const membershipSection = (
   <><Card className='membershipCard'>
     <CardHeader display='flex' justifyContent='center'>
-      <Text className='textLargeBold'>MEMBERSHIPS</Text>
+      <Text className='textLargeBold'>Socials</Text>
     </CardHeader>
     <CardBody pt={0}>
-      <Stack spacing={2}>
-        <Flex justify='space-between'>
-        <a href="https://instagram.com/stockholmnetballclub">Instagram</a>
-        </Flex>
+      <div className='socialEmbeds'>
+        <div>
+          <iframe
+            className='instagramEmbed'
+            title='Stockholm Netball Club Instagram profile'
+            src='https://www.instagram.com/stockholmnetballclub/embed'
+            loading='lazy'
+            allow='encrypted-media'
+          />
+        </div>
+        <div>
+          <div className='facebookProfile'>
+            <div className='facebookProfileMark' aria-hidden='true'>f</div>
+            <Text className='facebookProfileTitle'>Stockholm Netball Club</Text>
+            <Text className='facebookProfileText'>Follow the club on Facebook for updates, events and news.</Text>
+            <a
+              className='facebookProfileLink'
+              href='https://www.facebook.com/p/Stockholm-Netball-Club-100057617876055/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Visit us on Facebook
+            </a>
+          </div>
+        </div>
       {/* <Flex justify='space-between'>
       <Text className='textLarge'>Full</Text>
       <Text className='textLarge'>$400</Text>
@@ -137,22 +158,34 @@ const membershipSection = (
       <Text className='textLarge'>$280</Text>
     </Flex>
     <Divider /> */}
-    </Stack>
+      </div>
   </CardBody>
-  <CardFooter display='flex' justifyContent='center' pt={0}>
+  {/* <CardFooter display='flex' justifyContent='center' pt={0}>
       <Stack spacing={2} textAlign='center'>
         <Text className='textMedium'>Please contact us for more information regarding memberships.</Text>
       </Stack>
-    </CardFooter>
+    </CardFooter> */}
   </Card></>
 );
 
   const locationSection = (
-    <ContentSection title='WHERE TO FIND US' className={containerClass}>
-      Stockholm Netball Club is based in central Stockholm, Sweden.
-      <br />
-      Sessions are held at either Frescati Sports Center or the Swedish School of Sport and Health Sciences outdoor courts.
-    </ContentSection>
+    <Card className='locationCard'>
+      <CardHeader display='flex' justifyContent='center'>
+        <Text className='textLargeBold'>WHERE TO FIND US</Text>
+      </CardHeader>
+      <CardBody pt={0} textAlign='center'>
+        <Text className='textLarge'>
+          Stockholm Netball Club is based in central Stockholm, Sweden.
+          <br />
+          <br />
+          Sessions are held at either Frescati Sports Center
+          <br />
+          or
+          <br />
+          Swedish School of Sport and Health Sciences outdoor courts.
+        </Text>
+      </CardBody>
+    </Card>
   );
 
   const googleMap = (
@@ -170,7 +203,10 @@ const membershipSection = (
         <div className='homePageContainerDesktop'>
           {introSection}
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-            <Grid templateColumns='repeat(2, 1fr)' gap={6}>
+            <Grid templateColumns='1fr' gap={6}>
+              <GridItem colSpan={1} display='flex'>
+                {locationSection}
+              </GridItem>
               <GridItem colSpan={1} display='flex'>
                 {clubFeesSection}
               </GridItem>
@@ -178,17 +214,14 @@ const membershipSection = (
                 {membershipSection}
               </GridItem>
             </Grid>
-            {locationSection}
           </div>
         </div>
       ) : (
         <div className='homePageContainerMobile'>
           {introSection}
-          {clubFeesSection}
-          {/* Replacement homepage image goes here. */}
-          {membershipSection}
-          {/* Replacement homepage image goes here. */}
           {locationSection}
+          {clubFeesSection}
+          {membershipSection}
         </div>
       )}
       {googleMap}
