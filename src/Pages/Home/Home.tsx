@@ -99,13 +99,14 @@ const membershipSection = (
     </CardHeader>
     <CardBody pt={0}>
       <div className='socialEmbeds'>
-        <div className='socialEmbedItem'>
+        <div className='socialEmbedItem instagramEmbedItem'>
           <iframe
             className='instagramEmbed'
             title='Stockholm Netball Club Instagram profile'
             src='https://www.instagram.com/stockholmnetballclub/embed'
             loading='lazy'
             allow='encrypted-media'
+            scrolling='no'
           />
         </div>
         <div className='socialEmbedItem'>
