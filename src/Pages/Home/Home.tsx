@@ -99,7 +99,7 @@ const membershipSection = (
     </CardHeader>
     <CardBody pt={0}>
       <div className='socialEmbeds'>
-        <div>
+        <div className='socialEmbedItem'>
           <iframe
             className='instagramEmbed'
             title='Stockholm Netball Club Instagram profile'
@@ -108,7 +108,7 @@ const membershipSection = (
             allow='encrypted-media'
           />
         </div>
-        <div>
+        <div className='socialEmbedItem'>
           <div className='facebookProfile'>
             <div className='facebookProfileMark' aria-hidden='true'>f</div>
             <Text className='facebookProfileTitle'>Stockholm Netball Club</Text>
