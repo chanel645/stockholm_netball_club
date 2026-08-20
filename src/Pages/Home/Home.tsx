@@ -63,102 +63,102 @@ export default function Home() {
 const clubFeesSection = (
   <Card className='clubFeesCard'>
     <CardHeader display='flex' justifyContent='center'>
-      <Text className='textLargeBold'>CLUB FEES</Text>
+      <Text className='textLargeBold'>CLUB FEES AND MEMBERSHIPS</Text>
     </CardHeader>
     <CardBody pt={0}>
       <Stack spacing={2}>
         <Flex justify='space-between'>
-          <Text className='textLarge'>Senior membership</Text>
-          <Text className='textLarge'>$30</Text>
+          <Text className='textLarge'>First session free to come try out the game!</Text>
+        </Flex>
+        <Flex justify='space-between'>
+          <Text className='textLarge'>Seasonal membership available for 6 month seasons</Text>
         </Flex>
         <Divider />
         <Flex justify='space-between'>
-          <Text className='textLarge'>Junior membership</Text>
-          <Text className='textLarge'>$20</Text>
+          <Text className='textLarge'>Drop in fee available for one-off sessions</Text>
         </Flex>
         <Divider />
         <Flex justify='space-between'>
-          <Text className='textLarge'>Juniors (Under 19)</Text>
-          <Text className='textLarge'>$10</Text>
+          <Text className='textLarge'>Discounted membership for students</Text>
         </Flex>
         <Divider />
       </Stack>
     </CardBody>
     <CardFooter display='flex' justifyContent='center' pt={0}>
       <Stack spacing={2} textAlign='center'>
-        <Text className='textMedium'>Please contact the club for membership information and payment details.</Text>
-        <Text className='textMedium'>Stockholm Netball Club</Text>
-        <Text className='textMedium'>03-1903-0038936-10</Text>
-        <Text className='textMedium'>Please use your Green Fee Ticket Number as reference.</Text>
+        <Text className='textLarge'>Please contact the club for membership information, current sessions and payment details.</Text>
       </Stack>
     </CardFooter>
   </Card>
 );
 
 const membershipSection = (
-  <Card className='membershipCard'>
+  <><Card className='membershipCard'>
     <CardHeader display='flex' justifyContent='center'>
       <Text className='textLargeBold'>MEMBERSHIPS</Text>
     </CardHeader>
     <CardBody pt={0}>
       <Stack spacing={2}>
         <Flex justify='space-between'>
-          <Text className='textLarge'>Full</Text>
-          <Text className='textLarge'>$400</Text>
+        <a href="https://instagram.com/stockholmnetballclub">Instagram</a>
         </Flex>
-        <Divider />
-        <Flex justify='space-between'>
-          <Text className='textLarge'>Nine Hole</Text>
-          <Text className='textLarge'>$260</Text>
-        </Flex>
-        <Divider />
-        <Flex justify='space-between'>
-          <Text className='textLarge'>Social</Text>
-          <Text className='textLarge'>$260</Text>
-        </Flex>
-        <Divider />
-        <Flex justify='space-between'>
-          <Text className='textLarge'>Junior (Under 19)</Text>
-          <Text className='textLarge'>$60</Text>
-        </Flex>
-        <Divider />
-        <Flex justify='space-between'>
-          <Text className='textLarge'>Associate</Text>
-          <Text className='textLarge'>$250</Text>
-        </Flex>
-        <Divider />
-        <Flex justify='space-between'>
-          <Text className='textLarge'>Honorary</Text>
-          <Text className='textLarge'>$70</Text>
-        </Flex>
-        <Divider />
-        <Flex justify='space-between'>
-          <Text className='textLarge'>Summer (Daylight Savings Period)</Text>
-          <Text className='textLarge'>$280</Text>
-        </Flex>
-        <Divider />
-      </Stack>
-    </CardBody>
-    <CardFooter display='flex' justifyContent='center' pt={0}>
+      {/* <Flex justify='space-between'>
+      <Text className='textLarge'>Full</Text>
+      <Text className='textLarge'>$400</Text>
+    </Flex>
+    <Divider />
+    <Flex justify='space-between'>
+      <Text className='textLarge'>Nine Hole</Text>
+      <Text className='textLarge'>$260</Text>
+    </Flex>
+    <Divider />
+    <Flex justify='space-between'>
+      <Text className='textLarge'>Social</Text>
+      <Text className='textLarge'>$260</Text>
+    </Flex>
+    <Divider />
+    <Flex justify='space-between'>
+      <Text className='textLarge'>Junior (Under 19)</Text>
+      <Text className='textLarge'>$60</Text>
+    </Flex>
+    <Divider />
+    <Flex justify='space-between'>
+      <Text className='textLarge'>Associate</Text>
+      <Text className='textLarge'>$250</Text>
+    </Flex>
+    <Divider />
+    <Flex justify='space-between'>
+      <Text className='textLarge'>Honorary</Text>
+      <Text className='textLarge'>$70</Text>
+    </Flex>
+    <Divider />
+    <Flex justify='space-between'>
+      <Text className='textLarge'>Summer (Daylight Savings Period)</Text>
+      <Text className='textLarge'>$280</Text>
+    </Flex>
+    <Divider /> */}
+    </Stack>
+  </CardBody>
+  <CardFooter display='flex' justifyContent='center' pt={0}>
       <Stack spacing={2} textAlign='center'>
         <Text className='textMedium'>Please contact us for more information regarding memberships.</Text>
       </Stack>
     </CardFooter>
-  </Card>
+  </Card></>
 );
 
   const locationSection = (
     <ContentSection title='WHERE TO FIND US' className={containerClass}>
-      Stockholm Netball Club is based in Stockholm, Sweden.
+      Stockholm Netball Club is based in central Stockholm, Sweden.
       <br />
-      Use the map below to locate us.
+      Sessions are held at either Frescati Sports Center or the Swedish School of Sport and Health Sciences outdoor courts.
     </ContentSection>
   );
 
   const googleMap = (
     <iframe
       className='googleMap'
-      src={`https://www.google.com/maps/embed/v1/place?key=${GoogleApiKey}&q=place_id:ChIJmY9zTsG7LW0Rarzprjp9YwY`}
+      src={`https://www.google.com/maps/embed/v1/place?key=${GoogleApiKey}&q=place_id:ChIJK6BlywWdX0YRUtvKSZP1RLo`}
     />
   );
 
