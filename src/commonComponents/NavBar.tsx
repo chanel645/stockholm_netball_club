@@ -14,7 +14,7 @@ interface NavBarProps {
 const pagesMap: Map<number, string> = new Map([
   [0, "home"]
   ,[1, "whatIsNetball"]
-  ,[2, "schedule"]
+  ,[2, "membershipInfo"]
   // ,[3, "contact"]
 ]);
 
@@ -50,7 +50,7 @@ export default function NavBar(navBarProps: NavBarProps) {
         <TabList>
           <Tab>Home</Tab>
           <Tab>What is Netball?</Tab>
-          <Tab>Schedule</Tab>
+          <Tab>Membership Info</Tab>
           {/* <Tab>Contact</Tab>           */}
         </TabList>
       </Tabs>

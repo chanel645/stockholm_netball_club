@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { AnimatePresence, motion } from "motion/react"
 import Home from './Pages/Home/Home';
-import Schedule from './Pages/Schedule/Schedule';
+import MembershipInfo from './Pages/Membership Info/MembershipInfo';
 import WhatIsNetball from './Pages/WhatIsNetball/WhatIsNetball';
 import PageHeader from './commonComponents/PageHeader';
 import PageFooter from './commonComponents/PageFooter';
@@ -10,7 +10,7 @@ import PageFooter from './commonComponents/PageFooter';
 export default function Main() {
 
   // const pageOrder = ['whatIsNetball', 'schedule', 'contact'];
-  const pageOrder = ['home', 'whatIsNetball', 'schedule'];
+  const pageOrder = ['home', 'whatIsNetball', 'membershipInfo'];
 
   const [page, setPage] = React.useState('home')
   const [prevPage, setPrevPage] = React.useState('home');
@@ -18,7 +18,7 @@ export default function Main() {
   const pages: { [id: string] : JSX.Element } = {
       "home": <Home/>,
       "whatIsNetball": <WhatIsNetball/>,
-      "schedule": <Schedule/>,
+      "membershipInfo": <MembershipInfo/>,
       // "contact": <Contact/>
   }
 

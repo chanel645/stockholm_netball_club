@@ -199,7 +199,7 @@ const daysOfPlay = (
 );
 
 const scheduleDownload = (
-  <Card className='scheduleDownloadCard'>
+  <Card className='membershipInfoDownloadCard'>
     <CardHeader display='flex' justifyContent='center'>
       <Text className='textLargeBold'>SCHEDULE DOWNLOAD</Text>
     </CardHeader>
@@ -254,7 +254,7 @@ const AgendaEvent: React.FC<{ event: MyEvent }> = ({ event }) => {
   return <span>{event.title}</span>;
 };
 
-export default function Schedule() {
+export default function MembershipInfo() {
   const { width } = UseWindowSize();
   const isDesktopView = width > MobileWidth;
 
@@ -308,7 +308,7 @@ export default function Schedule() {
 
   const MyCalendar = () => (
     <div>
-      <div className={isDesktopView ? "schedulePageContainerDesktop" : "schedulePageContainerMobile"}>
+      <div className={isDesktopView ? "membershipInfoPageContainerDesktop" : "membershipInfoPageContainerMobile"}>
         <Calendar
           localizer={localizer}
           events={activeEvents}

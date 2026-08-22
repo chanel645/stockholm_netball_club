@@ -454,9 +454,9 @@ body {
   text-align: center;   /* <-- centers inline text inside */
 }
 
-/******************** Schedule Page ********************/
+/******************** Membership Info Page ********************/
 
-.schedulePageContainerMobile {
+.membershipInfoPageContainerMobile {
   padding-top: 30px;
   padding-bottom: 30px;
   right: 0px;
@@ -465,7 +465,7 @@ body {
   margin-right: auto;
 }
 
-.schedulePageContainerDesktop {
+.membershipInfoPageContainerDesktop {
   max-width: 1200px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -557,7 +557,7 @@ th.rbc-header:nth-child(2) {
 }
 
 .daysOfPlayCard,
-.scheduleDownloadCard {
+.membershipInfoDownloadCard {
   width: 100%;
   max-width: 400px;
   margin: 16px auto;
