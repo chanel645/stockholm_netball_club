@@ -54,8 +54,8 @@ export default function Home() {
 
   const introSection = (
     <ContentSection title='A WELCOMING NETBALL CLUB IN STOCKHOLM' className={containerClass}>
-      Stockholm Netball Club is a friendly community club in the heart of Stockholm.
-      Our welcoming club offers year-round sessions, a relaxed atmosphere, and a place
+      Stockholm Netball Club is a friendly and inclusive community club in the heart of Stockholm.
+      Our welcoming club offers year-round sessions for all genders, a relaxed atmosphere, and a place
       for players of all experience levels to enjoy the game and connect with others.
     </ContentSection>
   );
@@ -71,7 +71,7 @@ const clubFeesSection = (
           <Text className='textLarge'>First session free to come try out the game!</Text>
         </Flex>
         <Flex justify='space-between'>
-          <Text className='textLarge'>Seasonal membership available for 6 month seasons</Text>
+          <Text className='textLarge'>6 month seasons - Seasonal membership available</Text>
         </Flex>
         <Divider />
         <Flex justify='space-between'>
@@ -79,7 +79,7 @@ const clubFeesSection = (
         </Flex>
         <Divider />
         <Flex justify='space-between'>
-          <Text className='textLarge'>Discounted membership for students</Text>
+          <Text className='textLarge'>Discounted membership for students and the unemployed</Text>
         </Flex>
         <Divider />
       </Stack>
@@ -124,41 +124,6 @@ const membershipSection = (
             </a>
           </div>
         </div>
-      {/* <Flex justify='space-between'>
-      <Text className='textLarge'>Full</Text>
-      <Text className='textLarge'>$400</Text>
-    </Flex>
-    <Divider />
-    <Flex justify='space-between'>
-      <Text className='textLarge'>Nine Hole</Text>
-      <Text className='textLarge'>$260</Text>
-    </Flex>
-    <Divider />
-    <Flex justify='space-between'>
-      <Text className='textLarge'>Social</Text>
-      <Text className='textLarge'>$260</Text>
-    </Flex>
-    <Divider />
-    <Flex justify='space-between'>
-      <Text className='textLarge'>Junior (Under 19)</Text>
-      <Text className='textLarge'>$60</Text>
-    </Flex>
-    <Divider />
-    <Flex justify='space-between'>
-      <Text className='textLarge'>Associate</Text>
-      <Text className='textLarge'>$250</Text>
-    </Flex>
-    <Divider />
-    <Flex justify='space-between'>
-      <Text className='textLarge'>Honorary</Text>
-      <Text className='textLarge'>$70</Text>
-    </Flex>
-    <Divider />
-    <Flex justify='space-between'>
-      <Text className='textLarge'>Summer (Daylight Savings Period)</Text>
-      <Text className='textLarge'>$280</Text>
-    </Flex>
-    <Divider /> */}
       </div>
   </CardBody>
   {/* <CardFooter display='flex' justifyContent='center' pt={0}>
@@ -179,11 +144,9 @@ const membershipSection = (
           Stockholm Netball Club is based in central Stockholm, Sweden.
           <br />
           <br />
-          Sessions are held at either Frescati Sports Center
+          Currently Tuesday sessions are held at Frescati Sports Center
           <br />
-          or
-          <br />
-          Swedish School of Sport and Health Sciences outdoor courts.
+          and Sunday sessions are held at GIH-badet outdoor courts.
         </Text>
       </CardBody>
     </Card>
