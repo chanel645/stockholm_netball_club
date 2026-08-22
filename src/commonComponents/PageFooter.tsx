@@ -1,6 +1,6 @@
 import React from 'react';
 import './../App.css';
-// import emblem from './../Content/StockholmNetballClubEmblem.png';
+import logoWhite from './../content/StockholmNetballClubLogoWhite.png';
 import { Text } from '@chakra-ui/react'
 import { Center, Grid, GridItem } from '@chakra-ui/react';
 import { PhoneIcon, StarIcon } from '@chakra-ui/icons'
@@ -31,7 +31,7 @@ export default function PageFooter() {
                 </Center> 
                 <Center>     
                   <GridItem colSpan={1}>
-                      {/* Replacement footer emblem goes here. */}
+                      <img src={logoWhite} className='footeremblem' alt='Stockholm Netball Club' />
                   </GridItem>   
                 </Center>    
                 <Center>   
@@ -52,7 +52,7 @@ export default function PageFooter() {
       <Grid templateRows='repeat(3, 1fr)' className='footerverticalgrid'>     
           <Center>     
             <GridItem colSpan={1}>
-                {/* <img src={emblem} className='footeremblem'/> */}
+                <img src={logoWhite} className='footeremblem' alt='Stockholm Netball Club' />
             </GridItem>   
           </Center>  
           <Center>
