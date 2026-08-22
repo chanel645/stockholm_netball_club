@@ -214,6 +214,11 @@ body {
   margin: 24px auto 0;
 }
 
+.positionDescription {
+  display: block;
+  margin-bottom: 8px;
+}
+
 .googleMap {
   width: 100%;
   height: 300px;

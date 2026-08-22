@@ -26,20 +26,13 @@ export default function WhatIsNetball() {
   const rulesText = 'Netball consists of 14 players allowed on court at any one time. A team may take the court with a minimum of 5 players and maximum of 7. This image shows the 7 positions needed on the court for one team.';
   const positionsText = (
       <>
-        <br /><br />
-        <strong>Goal Keeper (GK):</strong> Work with the GD and to prevent the GS from scoring goals.
-        <br /><br />
-        <strong>Goal Defence (GD):</strong> Win the ball and reduce the effectiveness of the GA.
-        <br /><br />
-        <strong>Wing Defence (WD):</strong> Look for interceptions and to prevent the WA from feeding the circle.
-        <br /><br />
-        <strong>Center (C):</strong> Take the center pass and to link the defence and the attack.
-        <br /><br />
-        <strong>Wing Attack (WA):</strong> Feed the circle players giving them shooting opportunities.
-        <br /><br />
-        <strong>Goal Attack (GA):</strong> Feed balls to and work with GS and to score goals.
-        <br /><br />
-        <strong>Goal Shooter (GS):</strong> Score goals and to work in and around the circle with the GA.
+        <span className='positionDescription'><strong>Goal Keeper (GK):</strong> Work with the GD and to prevent the GS from scoring goals.</span>
+        <span className='positionDescription'><strong>Goal Defence (GD):</strong> Win the ball and reduce the effectiveness of the GA.</span>
+        <span className='positionDescription'><strong>Wing Defence (WD):</strong> Look for interceptions and to prevent the WA from feeding the circle.</span>
+        <span className='positionDescription'><strong>Center (C):</strong> Take the center pass and to link the defence and the attack.</span>
+        <span className='positionDescription'><strong>Wing Attack (WA):</strong> Feed the circle players giving them shooting opportunities.</span>
+        <span className='positionDescription'><strong>Goal Attack (GA):</strong> Feed balls to and work with GS and to score goals.</span>
+        <span className='positionDescription'><strong>Goal Shooter (GS):</strong> Score goals and to work in and around the circle with the GA.</span>
       </>
     );
 
