@@ -49,7 +49,7 @@ export default function NavBar(navBarProps: NavBarProps) {
       <Tabs colorScheme='coreTheme' index={tabIndex} size='lg' align='center' isFitted onChange={(index) => handleTabsChange(index)}>
         <TabList>
           <Tab>Home</Tab>
-          <Tab>Course</Tab>
+          <Tab>What is Netball?</Tab>
           <Tab>Schedule</Tab>
           {/* <Tab>Contact</Tab>           */}
         </TabList>
