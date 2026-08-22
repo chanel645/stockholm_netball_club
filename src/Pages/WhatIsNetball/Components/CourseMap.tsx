@@ -5,14 +5,14 @@ import HoleButton from './HoleButton';
 import UseWindowSize from '../../../commonComponents/UseWindowSize';
 import { MobileWidth } from '../../../commonComponents/Globals';
 
-export default function CourseMap() {
+export default function WhatIsNetballMap() {
 
   const { width } = UseWindowSize();
   const isDesktopView = width > MobileWidth;
 
   return (
-    <div className='courseMap'>
-      <div className="courseMapBox">
+    <div className='whatIsNetballMap'>
+      <div className="whatIsNetballMapBox">
           {/* Replacement court map image goes here. */}
           <HoleButton top="40%" left={isDesktopView ? "71.5%" : "71.5%"} transform="translate(-50%, -50%)" label="1"/>
           <HoleButton top="9%" left={isDesktopView ? "66%" : "65.5%"} transform="translate(-50%, -50%)" label="2"/>

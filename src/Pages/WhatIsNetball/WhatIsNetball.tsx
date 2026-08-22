@@ -4,12 +4,12 @@ import './../../App.css';
 import { Text } from '@chakra-ui/react';
 import UseWindowSize from '../../commonComponents/UseWindowSize';
 import { MobileWidth } from '../../commonComponents/Globals';
-import CourseTableLong from './Components/CourseTableLong';
+import WhatIsNetballTableLong from './Components/CourseTableLong';
 import PageTitle from '../../commonComponents/PageTitle';
-import CourseMap from './Components/CourseMap';
+import WhatIsNetballMap from './Components/CourseMap';
 import positionsImage from './Content/Netball Positions & Court Markings Images.jpg';
 
-export default function Course() {
+export default function WhatIsNetball() {
 
   const { width } = UseWindowSize();
   const isDesktopView = width > MobileWidth;
@@ -30,20 +30,20 @@ export default function Course() {
     return (
       <div> 
         <PageTitle mainText={mainText}/>
-        <div className='coursePageContainerDesktop'>
-          <div className='courseTextContainerDesktop'>
-            <div className='courseTextHeaderDesktop'>
+        <div className='whatIsNetballPageContainerDesktop'>
+          <div className='whatIsNetballTextContainerDesktop'>
+            <div className='whatIsNetballTextHeaderDesktop'>
               <Text className='textLargeBold'>{historyTitle}</Text>
             </div>
-            <div className='courseTextDesktop'>
+            <div className='whatIsNetballTextDesktop'>
               <Text className='textLarge'>{historyText}</Text>
             </div>
           </div>
-          <div className='courseTextContainerDesktop'>
-            <div className='courseTextHeaderDesktop'>
+          <div className='whatIsNetballTextContainerDesktop'>
+            <div className='whatIsNetballTextHeaderDesktop'>
               <Text className='textLargeBold'>{rulesTitle}</Text>
             </div>
-            <div className='courseTextDesktop'>
+            <div className='whatIsNetballTextDesktop'>
               <Text className='textLarge'>{rulesText}</Text>
             </div>
             <img className='positionsImage' src={positionsImage} alt='Netball positions and court markings' />
@@ -57,26 +57,26 @@ export default function Course() {
     return (
       <div> 
         <PageTitle  mainText={mainText}/>
-        <div className='coursePageContainerMobile'>
-          <div className='courseMapTextContainerMobile'>
-            <div className='courseTextHeaderMobile'>
+        <div className='whatIsNetballPageContainerMobile'>
+          <div className='whatIsNetballMapTextContainerMobile'>
+            <div className='whatIsNetballTextHeaderMobile'>
               <Text className='textLargeBold'>{historyTitle}</Text>
             </div>
-            <div className='courseTextMobile'>
+            <div className='whatIsNetballTextMobile'>
               <Text className='textLarge'>{historyText}</Text>
             </div>
           </div>
-          <div className='courseMapTextContainerMobile'>
-            <div className='courseTextHeaderMobile'>
+          <div className='whatIsNetballMapTextContainerMobile'>
+            <div className='whatIsNetballTextHeaderMobile'>
               <Text className='textLargeBold'>{rulesTitle}</Text>
             </div>
-            <div className='courseTextMobile'>
+            <div className='whatIsNetballTextMobile'>
               <Text className='textLarge'>{rulesText}</Text>
             </div>
             <img className='positionsImage' src={positionsImage} alt='Netball positions and court markings' />
           </div>
-          <CourseMap/>
-          <CourseTableLong/>
+          <WhatIsNetballMap/>
+          <WhatIsNetballTableLong/>
         </div>
       </div>
     );

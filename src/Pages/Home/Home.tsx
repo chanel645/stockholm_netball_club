@@ -27,7 +27,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({ title, children, classN
     <div className='homeTextContainerCenter'>
       <Text className='textLargeBold'>{title}</Text>
     </div>
-    <div className='courseTextMobile'>
+    <div className='whatIsNetballTextMobile'>
       <Text className='textLarge'>{children}</Text>
     </div>
   </div>

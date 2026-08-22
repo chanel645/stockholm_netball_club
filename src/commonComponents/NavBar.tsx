@@ -13,7 +13,7 @@ interface NavBarProps {
 
 const pagesMap: Map<number, string> = new Map([
   [0, "home"]
-  ,[1, "course"]
+  ,[1, "whatIsNetball"]
   ,[2, "schedule"]
   // ,[3, "contact"]
 ]);

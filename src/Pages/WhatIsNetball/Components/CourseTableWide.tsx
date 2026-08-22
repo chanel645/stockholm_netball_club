@@ -2,7 +2,7 @@ import React from 'react';
 import './../../../App.css';
 import { TableContainer, Table, Th, Thead, Tbody, Tr, Td, Tfoot, Text } from '@chakra-ui/react';
 
-export default function CourseTableWide() {
+export default function WhatIsNetballTableWide() {
 
 
     const tableHeader = (
@@ -72,8 +72,8 @@ export default function CourseTableWide() {
 
   return (
     <div>
-        <TableContainer className='courseTableContainerDesktop'>
-            <Table layout="fixed" variant='striped' className='courseTableTableDesktop'>
+        <TableContainer className='whatIsNetballTableContainerDesktop'>
+            <Table layout="fixed" variant='striped' className='whatIsNetballTableTableDesktop'>
                 {tableHeader}
                 <Tbody>
                     {tableRow('1', '355', '4' , '5', '304','4','6')}
@@ -90,7 +90,7 @@ export default function CourseTableWide() {
                     {footerRow('OUT', '2925', '36', '2600', '36')}
                 </Tfoot>
             </Table>
-            <Table variant='striped' className='courseTableDesktop'>
+            <Table variant='striped' className='whatIsNetballTableDesktop'>
                 <Tbody>
                     {tableRow('10', '336', '4', '9', '336', '4', '3')}
                     {tableRow('11', '139', '3', '17', '139', '3', '17')}

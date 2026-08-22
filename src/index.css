@@ -332,14 +332,14 @@ body {
   }
 }
 
-/******************** Course Page **********************/
+/******************** What Is Netball Page **********************/
 
-.courseMap {
+.whatIsNetballMap {
   width: 100%;
   text-align: center;
 }
 
-.courseMapBox {
+.whatIsNetballMapBox {
   position: relative; /* Makes the container the reference for absolute positioning */
   display: inline-block;
   margin: 0 auto;       /* centers horizontally */
@@ -348,11 +348,11 @@ body {
 
 /***** Desktop ******/
 
-.courseMapContainerDesktop {
+.whatIsNetballMapContainerDesktop {
   background-color:rgb(238, 242, 247);
 }
 
-.courseMapDesktop {
+.whatIsNetballMapDesktop {
   max-height: 1150px;
   width: auto;
   height: auto;
@@ -360,16 +360,16 @@ body {
   display: block;
 }
 
-.courseTableContainerDesktop {
+.whatIsNetballTableContainerDesktop {
   max-width: 100%;
 }
 
-.courseTableDesktop {
+.whatIsNetballTableDesktop {
   table-layout: fixed;
   width: 100%;
 }
 
-.coursePageContainerDesktop {
+.whatIsNetballPageContainerDesktop {
   max-width: 70%;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -379,18 +379,18 @@ body {
   margin-right: auto;
 }
 
-.courseTextContainerDesktop {
+.whatIsNetballTextContainerDesktop {
     max-width: 80%;
     padding-bottom: 40px;
     margin: 0 auto;
 }
 
-.courseTextHeaderDesktop {
+.whatIsNetballTextHeaderDesktop {
   text-align: center;   /* <-- centers inline text inside */
   padding-bottom: 15px;
 }
 
-.courseTextDesktop {
+.whatIsNetballTextDesktop {
 .pledgeLink {
   color: #005293;
 }
@@ -403,29 +403,29 @@ body {
 
 /***** Mobile *****/
 
-.courseMapMobile {
+.whatIsNetballMapMobile {
   display: block;
   margin: 0 auto;
   max-height: 800px;
   max-width: 100%;
 }
 
-/* Course Table Long */
-.courseTableContainerMobile {
+/* What Is Netball table */
+.whatIsNetballTableContainerMobile {
   max-width: 100%;
 }
 
-.courseTableMobile {
+.whatIsNetballTableMobile {
   table-layout: fixed;
   width: 100%;
 }
 
-.accordionCourse {
+.accordionWhatIsNetball {
   font-weight: 400;
   /* font-family: "Crimson Text", serif; */
 }
 
-.coursePageContainerMobile {
+.whatIsNetballPageContainerMobile {
   padding-top: 30px;
   right: 0px;
   left: 0px;
@@ -433,19 +433,19 @@ body {
   margin-right: auto;
 }
 
-.courseMapTextContainerMobile {
+.whatIsNetballMapTextContainerMobile {
     max-width: 90%;
     padding-bottom: 50px;
     padding-top: 10px;
     margin: 0 auto;
 }
 
-.courseTextHeaderMobile {
+.whatIsNetballTextHeaderMobile {
   text-align: center;   /* <-- centers inline text inside */
   padding-bottom: 15px;
 }
 
-.courseTextMobile {
+.whatIsNetballTextMobile {
   text-align: center;   /* <-- centers inline text inside */
 }
 

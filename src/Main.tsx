@@ -3,21 +3,21 @@ import './App.css';
 import { AnimatePresence, motion } from "motion/react"
 import Home from './Pages/Home/Home';
 import Schedule from './Pages/Schedule/Schedule';
-import Course from './Pages/WhatIsNetball/WhatIsNetball';
+import WhatIsNetball from './Pages/WhatIsNetball/WhatIsNetball';
 import PageHeader from './commonComponents/PageHeader';
 import PageFooter from './commonComponents/PageFooter';
 
 export default function Main() {
 
-  // const pageOrder = ['home', 'course', 'schedule', 'contact'];
-  const pageOrder = ['home', 'course', 'schedule'];
+  // const pageOrder = ['whatIsNetball', 'schedule', 'contact'];
+  const pageOrder = ['home', 'whatIsNetball', 'schedule'];
 
   const [page, setPage] = React.useState('home')
   const [prevPage, setPrevPage] = React.useState('home');
 
   const pages: { [id: string] : JSX.Element } = {
       "home": <Home/>,
-      "course": <Course/>,
+      "whatIsNetball": <WhatIsNetball/>,
       "schedule": <Schedule/>,
       // "contact": <Contact/>
   }

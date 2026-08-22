@@ -2,7 +2,7 @@ import React from 'react';
 import './../../../App.css';
 import { TableContainer, Table, Th, Thead, Tbody, Tr, Td, Tfoot, Box, Text, Accordion, AccordionItem, AccordionPanel, AccordionButton, AccordionIcon } from '@chakra-ui/react';
 
-export default function CourseTableLong() {
+export default function WhatIsNetballTableLong() {
 
     const tableHeader = (
         <Thead>
@@ -47,7 +47,7 @@ export default function CourseTableLong() {
 
     return (
         <div>
-            <Accordion allowToggle className='accordionCourse'>
+            <Accordion allowToggle className='accordionWhatIsNetball'>
                 <AccordionItem key='mens'>
                     <h2>
                     <AccordionButton>
@@ -58,8 +58,8 @@ export default function CourseTableLong() {
                     </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        <TableContainer className='courseTableContainerMobile'>
-                            <Table variant='striped' className='courseTableMobile'>
+                        <TableContainer className='whatIsNetballTableContainerMobile'>
+                            <Table variant='striped' className='whatIsNetballTableMobile'>
                                 {tableHeader}
                                 <Tbody>
                                     {tableRow('1', '355', '4' , '5')}
@@ -76,7 +76,7 @@ export default function CourseTableLong() {
                                     {footerRow('OUT','2925','36')}
                                 </Tfoot>
                             </Table>
-                            <Table variant='striped' className='courseTableLongTable'>
+                            <Table variant='striped' className='whatIsNetballTableLongTable'>
                                 <Tbody>
                                     {tableRow('10', '336', '4', '9')}
                                     {tableRow('11', '139', '3', '17')}
@@ -107,8 +107,8 @@ export default function CourseTableLong() {
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        <TableContainer className='courseTableLongContainer'>
-                            <Table variant='striped' className='courseTableLongTable'>
+                        <TableContainer className='whatIsNetballTableLongContainer'>
+                            <Table variant='striped' className='whatIsNetballTableLongTable'>
                                 {tableHeader}
                                 <Tbody>
                                     {tableRow('1', '304', '4', '6')}
@@ -125,7 +125,7 @@ export default function CourseTableLong() {
                                     {footerRow('OUT','2600','36')}
                                 </Tfoot>
                             </Table>
-                            <Table variant='striped' className='courseTableLongTable'>
+                            <Table variant='striped' className='whatIsNetballTableLongTable'>
                                 <Tbody>
                                     {tableRow('10', '336', '4', '3')}
                                     {tableRow('11', '139', '3', '17')}
