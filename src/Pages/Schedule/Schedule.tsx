@@ -61,7 +61,7 @@ const clubEvents: MyEvent[] = [...mensEvents, ...womensEvents];
 const aorangiEvents: MyEvent[] = [...mensAorangiEvents, ...womensAorangiEvents];
 
 const mensColour = '#267703';
-const womensColour = '#2b6cb0';
+const womensColour = '#005293';
 
 const eventStyleGetter: EventPropGetter<MyEvent> = (event) => ({
   style: {

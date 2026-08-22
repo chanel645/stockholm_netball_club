@@ -84,14 +84,14 @@ body {
 }
 
 .headerdrawer {
-  background-color:rgb(43, 108, 176);
+  background-color: #005293;
   height: 75px;
 }
 
 /******************** Page footer **********************/
 
 .footer {
-  background-color:rgb(43, 108, 176);
+  background-color: #005293;
   color: rgb(255, 253, 253);
   position: relative;
   width:100%;

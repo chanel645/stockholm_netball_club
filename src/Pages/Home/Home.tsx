@@ -144,7 +144,7 @@ const membershipSection = (
           Stockholm Netball Club is based in central Stockholm, Sweden.
           <br />
           <br />
-          Currently Tuesday sessions are held at Frescati Sports Center
+          Tuesday sessions are held at Frescati Sports Center
           <br />
           and Sunday sessions are held at GIH-badet outdoor courts.
         </Text>
